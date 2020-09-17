@@ -1,0 +1,505 @@
+/*! CSS Used from: https://www.vesti.ru/css/main.css?v=1600170568 */
+body{margin:0;padding:0;}
+body{font:normal 16px/24px Open Sans,sans-serif;overflow-x:hidden;min-height:100vh;display:flex;flex-flow:column nowrap;background:url(https://www.vesti.ru/i/bg.png?3764571a5d1dc1fbf05e51366f2a619d);}
+.page-wrap,body{position:relative;}
+.page-wrap{max-width:1280px;min-width:320px;padding:0;z-index:2;}
+@media screen and (max-width:1680px){
+.page-wrap{margin-right:400px;min-width:860px;}
+}
+@media screen and (max-width:1024px){
+.page-wrap{width:100%;min-width:320px;}
+}
+@media screen and (max-width:570px){
+.page-wrap{padding:0;overflow:hidden;}
+}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+h3{margin:0;}
+.lazy{opacity:0;width:100%;height:0;padding-bottom:56.25%;}
+.lazy-preloader{position:relative;}
+.lazy-preloader:after{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;height:18px;width:18px;background:transparent url(https://www.vesti.ru/i/preloader.gif?11f0c8c44868fe23181f9e5da8c337c2) 50% no-repeat;background-size:cover;}
+.header{position:relative;z-index:3;}
+.header__holder{background:#0095da;height:54px;box-sizing:border-box;width:100%;margin:0;display:flex;flex-flow:row nowrap;}
+@media screen and (max-width:1280px){
+.header__holder{height:42px;}
+}
+.header__control{margin:auto 19px;display:block;}
+@media screen and (max-width:1280px){
+.header__control{margin:auto 13px;}
+}
+.header__logo{margin:auto 0;display:flex;}
+.header__navigation{margin:auto auto auto 24px;}
+.header__age-restriction{margin:auto 12px;}
+.header__search{margin:auto 0 auto auto;}
+.header__button{display:block;font-size:0;cursor:pointer;}
+.header__button--burger{height:20px;width:20px;background:transparent url(https://www.vesti.ru/i/icon-burger-white.svg?86dcaf47cb9211569efb31687028eb41) 50% no-repeat;background-size:100%;}
+@media screen and (max-width:1280px){
+.header__button--burger{height:16px;width:16px;background-size:contain;}
+}
+.header .logo{display:block;width:82px;height:15px;background:transparent url(https://www.vesti.ru/i/logo.svg?b8387cc31ffc7e91b04cc361dbac2604) 50% no-repeat;background-size:cover;}
+@media screen and (570px){
+.header .logo{height:40px;width:40px;}
+}
+.header__age-restriction .header__icon{font:12px/30px Open Sans,sans-serif;color:#fff;text-align:center;display:block;height:30px;width:30px;border:1px solid #70b6f2;border-radius:4px;}
+.footer{margin:0;border-top:9px solid #0095da;background:#1a1a1a;max-width:1280px;min-width:320px;padding:0;position:relative;z-index:2;}
+@media screen and (max-width:1680px){
+.footer{margin-right:400px;min-width:860px;}
+}
+@media screen and (max-width:1024px){
+.footer{width:100%;min-width:320px;}
+}
+.footer__social{min-height:80px;background:#262626;display:flex;box-sizing:border-box;padding:24px 64px;width:100%;}
+@media screen and (max-width:900px){
+.footer__social{padding:24px;}
+}
+@media screen and (max-width:670px){
+.footer__social{justify-content:space-between;height:auto;-o-flex-wrap:wrap;flex-wrap:wrap;padding-top:20px;}
+}
+.footer__social p{color:#ddd;font:normal 16px/24px Open Sans,sans-serif;padding-top:3px;display:inline-block;margin:0;}
+@media screen and (max-width:670px){
+.footer__social p{text-align:center;width:100%;padding-top:0;padding-bottom:24px;}
+}
+.footer .soc-button{display:inline-block;width:32px;height:32px;border-radius:3px;margin-left:16px;}
+@media screen and (max-width:670px){
+.footer .soc-button:nth-child(2){margin-left:0;}
+}
+@media screen and (max-width:570px){
+.footer .soc-button{margin-left:calc((100% - 128px)/3);}
+.footer .soc-button:nth-child(2),.footer .soc-button:nth-child(6),.footer .soc-button:nth-child(10){margin-left:0;}
+.footer .soc-button:nth-child(n+6){margin-top:24px;}
+}
+.footer .soc-button.vkontakte{background:#4680c2 url(https://www.vesti.ru/i/icon-vkontakte-white.svg?93d22bec982c5dc81ac925b765ceb3fe) 50% 50% no-repeat;background-size:20px 20px;}
+.footer .soc-button.facebook{background:#3c5a99 url(https://www.vesti.ru/i/icon-facebook-white.svg?52b25dbe01e30641288adae431d6ece3) 50% 50% no-repeat;background-size:20px 20px;}
+.footer .soc-button.twitter{background:#1da1f2 url(https://www.vesti.ru/i/icon-twitter-white.svg?447540e107267c8406e68fcd09c780ec) 50% 50% no-repeat;background-size:20px 20px;}
+.footer .soc-button.odnoklassniki{background:#ee8208 url(https://www.vesti.ru/i/icon-odnoklassniki-white.svg?45ddaa7f3be4329614fee56054bc9521) 50% 50% no-repeat;}
+.footer .soc-button.instagram{background:#f00075 url(https://www.vesti.ru/i/icon-instagram-white.svg?5fa6a74b6c7639c9978ad668e01a06b9) 50% 50% no-repeat;}
+.footer .soc-button.youtube{background:red url(https://www.vesti.ru/i/icon-youtube-white.svg?f01fdab5951214402eb817470106a53e) 50% 50% no-repeat;background-size:22px 14px;}
+.footer .soc-button.flipboard{background:#e12828 url(https://www.vesti.ru/i/icon-flipboard-white.svg?df2cf1e89dd98e3905005c0757b2f3b9) 50% 50% no-repeat;}
+.footer .soc-button.telegram{background:#08c url(https://www.vesti.ru/i/telegram_soc_but.svg?e6074f3a235d8088f6406d703fddde1e) 50% 50% no-repeat;background-size:60%;}
+.footer .soc-button.rss{background:#ee802f url(https://www.vesti.ru/i/icon-rss-white.svg?77db4eae105ec81886186c01851e5f04) 50% 50% no-repeat;background-size:20px 20px;}
+.footer__list{padding:0 64px;}
+@media screen and (max-width:900px){
+.footer__list{padding:0 24px;}
+}
+.footer__title{margin:30px 0;font:300 18px Open Sans,sans-serif;color:#555;}
+@media screen and (max-width:570px){
+.footer__title{cursor:pointer;}
+}
+.footer__programs{webkit-columns:4;-ms-columns:4;-o-columns:4;-webkit-columns:4;column-count:4;margin:0;padding:0 0 30px;list-style:none;}
+@media screen and (max-width:1024px){
+.footer__programs{webkit-columns:3;-ms-columns:3;-o-columns:3;-webkit-columns:3;column-count:3;}
+}
+@media screen and (max-width:900px){
+.footer__programs{webkit-columns:2;-ms-columns:2;-o-columns:2;-webkit-columns:2;column-count:2;}
+}
+@media screen and (max-width:570px){
+.footer__programs{-webkit-columns:1;-ms-columns:1;-o-columns:1;column-count:1;display:none;}
+}
+.footer__programs li{padding:0 24px 6px 0;line-height:16px;}
+.footer__programs li a{font:12px Open Sans,sans-serif;color:#999;}
+.footer__error-info{padding:30px 64px;border-top:1px solid #484848;border-bottom:1px solid #484848;}
+@media screen and (max-width:900px){
+.footer__error-info{padding:30px 24px;}
+}
+.footer__error-info p{margin:0;color:#fff;font:normal 14px Open Sans,sans-serif;}
+.footer__holder{box-sizing:border-box;width:100%;padding:16px 64px;max-width:1280px;margin:0 auto;display:flex;flex-flow:row nowrap;}
+@media screen and (max-width:900px){
+.footer__holder{padding:16px 24px;-o-flex-wrap:wrap;flex-wrap:wrap;}
+}
+.footer__info{margin:0;width:75%;}
+@media screen and (max-width:900px){
+.footer__info{width:100%;}
+}
+.footer__info p{font:.8em/1.2em Open Sans,sans-serif;color:#666;margin:0 0 16px;}
+.footer__info p a{color:inherit;}
+.footer__counters{padding:36px 0 0;box-sizing:border-box;width:25%;}
+@media screen and (max-width:900px){
+.footer__counters{width:139px;}
+}
+.footer .counters__item{display:block;width:auto;text-align:right;margin-bottom:10px;}
+@media screen and (max-width:900px){
+.footer .counters__item{text-align:left;}
+}
+.main-content{background:#fff;position:relative;display:flex;-o-flex-wrap:wrap;flex-wrap:wrap;z-index:2;}
+.content{min-height:700px;border-right:1px solid #ccc;display:flex;width:100%;box-sizing:border-box;}
+.content__inner{border-right:1px solid #ccc;}
+.content__inner--article{width:100%;border:none;}
+.content__holder{display:flex;}
+.content__article{width:calc(100% - 333px);background-color:#fff;border-right:1px solid #ccc;box-sizing:border-box;padding-bottom:38px;}
+@media screen and (max-width:1365px){
+.content__article{width:calc(100% - 273px);}
+}
+@media screen and (max-width:1024px){
+.content__article{width:100%;}
+}
+.navigation{box-sizing:border-box;transition:unset;}
+.navigation .vgtrk_bar{padding:13px 54px 0;}
+@media screen and (max-width:1280px){
+.navigation .vgtrk_bar{padding:13px 42px 0;}
+}
+@media screen and (max-width:600px){
+.navigation .vgtrk_bar{margin-left:50%;}
+}
+@media screen and (max-width:410px){
+.navigation .vgtrk_bar{padding-top:13px;margin-left:0;}
+}
+.navigation .vgtrk_bar a{color:#fff;text-decoration:none;font:normal 13px/30px Open Sans,sans-serif;}
+.navigation .vgtrk_bar a:hover{text-decoration:underline;}
+.navigation .vgtrk_bar li.dropdown>a{color:#58c4f6;text-decoration:none;}
+@media screen and (max-width:600px){
+.navigation .vgtrk_bar li.dropdown>a{color:#fff;cursor:pointer!important;}
+.navigation .vgtrk_bar li.dropdown>a:hover{text-decoration:underline;}
+.navigation .vgtrk_bar li.dropdown>a:after{content:"";display:inline-block;height:9px;width:12px;vertical-align:baseline;background:transparent url(https://www.vesti.ru/i/arrow-down.svg?f36fc92ff26fb5b722ba3b1475aeda41) 50% no-repeat;background-size:100% auto;margin:0 0 0 10px;}
+.navigation .vgtrk_bar li.dropdown>a:after{transition:-webkit-transform .3s ease 0ms;transition:transform .3s ease 0ms;transition:transform .3s ease 0ms,-webkit-transform .3s ease 0ms;}
+}
+.navigation .vgtrk_bar li.dropdown ul{display:block;padding-left:16px;width:auto;}
+@media screen and (max-width:600px){
+.navigation .vgtrk_bar li.dropdown ul{max-height:0;overflow:hidden;padding-left:16px;transition:max-height .3s ease 0ms;}
+}
+.navigation__control{position:absolute;top:0;left:0;height:54px;width:54px;background:#0095da;display:none;}
+@media screen and (max-width:1280px){
+.navigation__control{height:42px;width:42px;}
+}
+.navigation__list{-webkit-transform:translateX(-100%);transform:translateX(-100%);transition:-webkit-transform .3s ease 0ms;transition:transform .3s ease 0ms;transition:transform .3s ease 0ms,-webkit-transform .3s ease 0ms;position:absolute;top:54px;left:0;width:100%;max-width:780px;background:#0095da;border-top:1px solid #2483c5;display:flex;padding:15px 0 122px;-o-flex-wrap:wrap;flex-wrap:wrap;z-index:11;}
+@media screen and (max-width:1280px){
+.navigation__list{top:42px;}
+}
+@media screen and (max-width:480px){
+.navigation__list{padding-bottom:146px;}
+}
+.navigation__list:after{position:absolute;height:100%;width:1px;left:-1px;top:0;box-shadow:2px 0 14px 1px #333;content:" ";}
+.navigation__list ul{list-style:none;width:33.33333%;box-sizing:border-box;display:inline-block;margin:0;}
+@media screen and (max-width:600px){
+.navigation__list ul{width:50%;}
+}
+@media screen and (max-width:410px){
+.navigation__list ul{width:100%;}
+}
+.navigation__main{padding-left:54px;}
+@media screen and (max-width:1280px){
+.navigation__main{padding-left:42px;}
+}
+@media screen and (max-width:570px){
+.navigation__main{padding-left:40px;}
+}
+.navigation__projects{padding:13px 54px 0;color:#58c4f6;}
+@media screen and (max-width:1280px){
+.navigation__projects{padding:13px 42px 0;}
+}
+@media screen and (max-width:600px){
+.navigation__projects{padding-top:7px;}
+}
+.navigation__projects .navigation__link{font:normal 13px/30px Open Sans,sans-serif;}
+.navigation__link{color:#fff;text-decoration:none;font:500 18px/52px Open Sans,sans-serif;}
+.navigation__link[href*="live.russia"]{padding-right:61px;position:relative;}
+@media screen and (max-width:1280px){
+.navigation__link[href*="live.russia"]{padding-right:57px;}
+}
+.navigation__link[href*="live.russia"]:after{content:"";position:absolute;top:0;right:26px;box-sizing:border-box;border:1px solid #77c6eb;border-radius:2px;width:29px;height:29px;background:transparent url(https://www.vesti.ru/i/24.svg?db77f998fbdbd2954df0a85f9310e495) 50% 50% no-repeat;}
+@media screen and (max-width:1280px){
+.navigation__link[href*="live.russia"]:after{height:26px;width:26px;top:0;background-size:16px auto;}
+}
+@media screen and (max-width:600px){
+.navigation__link{line-height:40px;}
+}
+.navigation__link:hover{text-decoration:underline;}
+.navigation-top__item{border-right:1px solid #2483c5;margin:0;}
+.navigation-top__item:first-child{border-left:1px solid #2483c5;}
+.navigation-top__link{font:1em/54px Open Sans,sans-serif;color:#fff;display:block;height:54px;padding:0 24px;text-decoration:none;background:transparent;transition:all .3s ease 0ms;}
+.navigation-top__link:hover{background:#2483c5;transition:all .3s ease 0ms;text-decoration:none;}
+.navigation-top__link[href*="live.russia"]{padding-right:61px;position:relative;}
+@media screen and (max-width:1280px){
+.navigation-top__link[href*="live.russia"]{padding-right:57px;}
+}
+.navigation-top__link[href*="live.russia"]:after{content:"";position:absolute;top:12px;right:26px;box-sizing:border-box;border:1px solid #77c6eb;border-radius:2px;width:29px;height:29px;background:transparent url(https://www.vesti.ru/i/24.svg?db77f998fbdbd2954df0a85f9310e495) 50% 50% no-repeat;}
+@media screen and (max-width:1280px){
+.navigation-top__link[href*="live.russia"]:after{height:26px;width:26px;top:8px;background-size:16px auto;}
+}
+@media screen and (max-width:1280px){
+.navigation-top__link{height:42px;line-height:42px;}
+}
+.navigation__close{font-size:0;text-decoration:none;display:block;height:22px;width:22px;background:transparent url(https://www.vesti.ru/i/icon-close-white.svg?f4ff11bfbf4421371d63bc1cf9b69f67) 50% no-repeat;background-size:13px 13px;margin:16px auto 16px 18px;}
+@media screen and (max-width:1280px){
+.navigation__close{margin:10px auto 10px 10px;}
+}
+.navigation-top{list-style:none;margin:0;padding:0;display:flex;}
+@media screen and (max-width:770px){
+.navigation-top{display:none!important;}
+}
+.navigation__social{position:absolute;bottom:0;right:54px;left:54px;height:96px;border-top:1px solid #2483c5;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;}
+@media screen and (max-width:1280px){
+.navigation__social{right:42px;left:42px;}
+}
+@media screen and (max-width:480px){
+.navigation__social{-o-flex-wrap:wrap;flex-wrap:wrap;height:120px;}
+}
+.navigation .soc-button{display:inline-block;width:26px;height:26px;}
+@media screen and (max-width:480px){
+.navigation .soc-button{margin-left:calc((100% - 104px)/3);}
+.navigation .soc-button:first-child,.navigation .soc-button:nth-child(5),.navigation .soc-button:nth-child(9){margin-left:0;}
+}
+.navigation .soc-button.vkontakte{background:transparent url(https://www.vesti.ru/i/icon-vkontakte-white.svg?93d22bec982c5dc81ac925b765ceb3fe) 50% 50% no-repeat;background-size:contain;}
+.navigation .soc-button.facebook{background:transparent url(https://www.vesti.ru/i/icon-facebook-white.svg?52b25dbe01e30641288adae431d6ece3) 50% 50% no-repeat;background-size:20px 20px;}
+.navigation .soc-button.twitter{background:transparent url(https://www.vesti.ru/i/icon-twitter-white.svg?447540e107267c8406e68fcd09c780ec) 50% 50% no-repeat;background-size:20px 20px;}
+.navigation .soc-button.odnoklassniki{background:transparent url(https://www.vesti.ru/i/icon-odnoklassniki-white.svg?45ddaa7f3be4329614fee56054bc9521) 50% 50% no-repeat;}
+.navigation .soc-button.instagram{background:transparent url(https://www.vesti.ru/i/icon-instagram-white.svg?5fa6a74b6c7639c9978ad668e01a06b9) 50% 50% no-repeat;}
+.navigation .soc-button.youtube{background:transparent url(https://www.vesti.ru/i/icon-youtube-white.svg?f01fdab5951214402eb817470106a53e) 50% 50% no-repeat;}
+.navigation .soc-button.flipboard{background:transparent url(https://www.vesti.ru/i/icon-flipboard-white.svg?df2cf1e89dd98e3905005c0757b2f3b9) 50% 50% no-repeat;}
+.navigation .soc-button.telegram{background:transparent url(https://www.vesti.ru/i/telegram_soc_but.svg?e6074f3a235d8088f6406d703fddde1e) 50% 50% no-repeat;background-size:70%;}
+.navigation .soc-button.rss{background:transparent url(https://www.vesti.ru/i/icon-rss-white.svg?77db4eae105ec81886186c01851e5f04) 50% 50% no-repeat;background-size:20px 20px;}
+.search-form{display:flex;flex-flow:row nowrap;position:relative;height:30px;}
+.search-form__control{position:absolute;right:0;height:30px;width:30px;background:transparent url(https://www.vesti.ru/i/icon-search-white.svg?4473da84dd64f67a546062df9297ae4b) 50% no-repeat;background-size:50%;cursor:pointer;}
+.search-form__form{margin:auto 0 auto 12px;padding:0;list-style:none;background:#0069a0;border-radius:18px;overflow:hidden;display:flex;flex-flow:row nowrap;transition:all .3s ease 0ms;z-index:2;max-width:0;opacity:0;}
+.search-form__query{-webkit-appearance:none;outline:none;box-sizing:border-box;height:30px;background:transparent;border:none;padding:0 12px;margin:0;color:#fff;width:calc(100% - 30px);font:300 12px/17px Roboto,sans-serif;}
+.search-form__query::-ms-input-placeholder{color:#89bad0;}
+.search-form__query:-ms-input-placeholder{color:#89bad0;}
+.search-form__query::-webkit-input-placeholder{color:#89bad0;}
+.search-form__query::placeholder{color:#89bad0;}
+.search-form__submit{-webkit-appearance:none;outline:none;font-size:0;box-sizing:border-box;height:30px;width:30px;background:transparent url(https://www.vesti.ru/i/icon-search-white.svg?4473da84dd64f67a546062df9297ae4b) 50% no-repeat;background-size:50%;border:none;border-radius:0 3px 3px 0;padding:0;margin:0;}
+body:not([data-device=mobile]) .share{width:120px;min-width:120px;padding:16px 0 2px;}
+@media screen and (max-width:1280px){
+body:not([data-device=mobile]) .share{width:100%;margin-left:-10px;}
+}
+body:not([data-device=mobile]) .share__list{margin:0;padding:0;list-style:none;}
+@media screen and (max-width:1280px){
+body:not([data-device=mobile]) .share__list{display:flex;flex-flow:row wrap;}
+}
+body:not([data-device=mobile]) .share__item{margin:18px 5px 0 4px;}
+@media screen and (max-width:1280px){
+body:not([data-device=mobile]) .share__item{margin:18px 10px 0 4px;}
+}
+body:not([data-device=mobile]) .share__link{display:flex;flex-flow:row nowrap;text-decoration:none;}
+body:not([data-device=mobile]) .share__link--facebook .share__icon{background:transparent url(https://www.vesti.ru/i/icon-facebook-blue.svg?69f7ecee0e56a7f0e8d9272105ba96c5) 50% no-repeat;background-size:contain;}
+body:not([data-device=mobile]) .share__link--vkontakte .share__icon{background:transparent url(https://www.vesti.ru/i/icon-vkontakte-blue.svg?4ce6299d692f4cd92559bde7072302e5) 50% no-repeat;background-size:contain;}
+body:not([data-device=mobile]) .share__link--twitter .share__icon{background:transparent url(https://www.vesti.ru/i/icon-twitter-blue.svg?f1084de05e718750579e2dd2e901fe9c) 50% no-repeat;background-size:contain;}
+body:not([data-device=mobile]) .share__link--odnoklassniki .share__icon{background:transparent url(https://www.vesti.ru/i/icon-odnoklassniki-blue.svg?63f89481de1f3129fad8412e1b3b6b8d) 50% no-repeat;background-size:contain;}
+body:not([data-device=mobile]) .share__link--flipboard .share__icon{background:transparent url(https://www.vesti.ru/i/icon-flipboard-blue.svg?3f1c6008c85c5d1d63cc74024208b049) 50% no-repeat;background-size:contain;}
+body:not([data-device=mobile]) .share__icon{display:block;height:20px;width:20px;margin:auto 0;}
+body:not([data-device=mobile]) .share__count{display:block;height:22px;width:40px;margin:0 0 0 12px;padding:0 5px;position:relative;color:#6d6d6d;text-align:center;border:1px solid #ccc;background:#fff;}
+body:not([data-device=mobile]) .share__count:before{content:"";position:absolute;top:50%;left:-2px;display:block;box-sizing:border-box;height:6px;width:6px;border-top:1px solid #ccc;border-left:1px solid #ccc;background:#fff;-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%);}
+.tags{display:flex;-o-flex-wrap:wrap;flex-wrap:wrap;margin-top:24px;padding-left:146px;}
+@media screen and (max-width:1280px){
+.tags{padding-left:0;}
+}
+.tags__item{display:inline-block;border:1px solid #999;color:#999;margin-bottom:12px;margin-right:12px;font:normal 12px/26px Open Sans,sans-serif;padding:0 14px;text-decoration:none;}
+.slot--article{height:100%;width:333px;flex:0 0 333px;}
+@media screen and (max-width:1365px){
+.slot--article{width:273px;flex:0 0 273px;}
+}
+@media screen and (max-width:1024px){
+.slot--article{display:none;}
+}
+.slot__container--sticky{position:-webkit-sticky;position:sticky;top:20px;}
+.article{padding:24px 70px;color:#000;}
+@media screen and (max-width:570px){
+.article{padding:24px 12px;}
+}
+.article__date{font:normal 14px/18px Arimo,sans-serif;color:#555;}
+.article__time{padding:0 12px;}
+.article__title{font:normal 32px/36px RussiaLight,sans-serif;padding:4px 0 24px;margin:0;}
+.article__media{padding-bottom:20px;position:relative;}
+.article__video{position:relative;width:100%;padding-bottom:56.25%;}
+.article__video iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+.article__body{display:flex;}
+@media screen and (max-width:1280px){
+.article__body{-o-flex-wrap:wrap;flex-wrap:wrap;}
+}
+.article__text{font:normal 16px/24px Open Sans,sans-serif;color:#333;padding-left:24px;padding-top:24px;width:100%;}
+@media screen and (max-width:1280px){
+.article__text{padding-left:0;}
+}
+.article__text img{max-width:100%;}
+.article__text div{margin:0 0 30px;}
+.article__text a{text-decoration:underline;color:#0095da;}
+.article__text-source{margin:0 0 6px!important;}
+.article__text-source a{font:normal 16px/32px Open Sans,sans-serif;color:#fff;text-decoration:none;display:inline-block;height:32px;padding:0 24px;border-radius:4px;background:#0095da;}
+.article__text-source a:hover{background:#2483c5;}
+.list{padding:0 24px;}
+@media screen and (max-width:570px){
+.list{padding:0 12px;}
+}
+.list.list-more-videos{border-top:1px solid #ccc;padding:0 70px;}
+@media screen and (max-width:570px){
+.list.list-more-videos{padding:0 12px;}
+}
+.list.list-more-videos .list__item:last-child{border-bottom:none;}
+.list__item{padding:32px 0;border-bottom:1px solid #ccc;display:flex;align-items:center;justify-content:space-between;}
+@media screen and (max-width:1024px){
+.list__item{padding:28px 0;}
+}
+@media screen and (max-width:570px){
+.list__item{-o-flex-wrap:wrap;flex-wrap:wrap;}
+}
+.list__pic-wrapper{display:inline-block;width:162px;}
+@media screen and (max-width:1280px){
+.list__pic-wrapper{width:132px;}
+}
+@media screen and (max-width:570px){
+.list__pic-wrapper{width:100%;}
+}
+.list__pic{display:block;width:100%;border-radius:3px;}
+.list__info{width:calc(100% - 162px);padding-left:56px;padding-right:56px;box-sizing:border-box;position:relative;}
+@media screen and (max-width:1280px){
+.list__info{width:calc(100% - 132px);}
+}
+@media screen and (max-width:570px){
+.list__info{width:100%;padding-left:0;padding-top:22px;padding-right:36px;}
+}
+.list__data{display:flex;flex-flow:row wrap;}
+.list__date{color:#000;}
+.list__date,.list__time{font:400 13px/18px Open Sans,sans-serif;margin:0 0 4px;}
+.list__time{color:#999;padding:0 14px;}
+.list__title{font:700 18px/24px Arimo,sans-serif;color:#000;padding-top:10px;}
+@media screen and (max-width:570px){
+.list__title{padding-top:3px;font-weight:400;}
+}
+.list-more-videos .list__title{font:normal 24px/32px Arimo,sans-serif;}
+@media screen and (max-width:1280px){
+.list-more-videos .list__title{font:normal 18px/24px Arimo,sans-serif;}
+}
+.list__title a{color:inherit;}
+.list__title a:hover{text-decoration:none;color:#2483c5;}
+.list__icon{position:absolute;top:50%;margin-top:-12px;right:0;}
+.list__icon,.list__icon-play{width:24px;box-sizing:border-box;}
+.list__icon-play{display:block;height:24px;border:1px solid #2483c5;border-radius:50%;background:transparent url(https://www.vesti.ru/i/icon-play-blue.svg?8386f57b39f244097da962e8775ace79) 8px 50% no-repeat;}
+/*! CSS Used from: Embedded */
+img[src="https://pics.vesti.ru/counter/video_counter.gif?mh_eyJpZCI6IjIyMjMxMDkiLCJ0eXBlIjoidmlkZW8ifQ=="]{display:none!important;}
+img[src="https://informer.yandex.ru/informer/21374125/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"]{display:none!important;}
+img[src="https://counter.yadro.ru/hit?t16.2;rhttps%3A//www.vesti.ru/video/2223109;s1920*1080*24;uhttps%3A//www.vesti.ru/video/2223109;0.9821814926527708"]{display:none!important;}
+/*! CSS Used from: Embedded */
+#adfox_157527859444081543{position:relative;max-width:1280px;}
+@media screen and (max-width: 1680px){
+#adfox_157527859444081543{margin-right:400px;min-width:860px;}
+}
+@media screen and (max-width: 1024px){
+#adfox_157527859444081543{margin-right:0;min-width:320px;width:100%;}
+}
+/*! CSS Used from: Embedded */
+#adfox_149805121463115958{position:relative;max-width:1280px;}
+@media screen and (max-width: 1680px){
+#adfox_149805121463115958{margin-right:400px;min-width:860px;}
+}
+@media screen and (max-width: 1024px){
+#adfox_149805121463115958{margin-right:0;min-width:320px;width:100%;}
+}
+/*! CSS Used from: https://live.russia.tv/miniplayer/miniplayer.style.css?v=12 */
+.mini-player-button--pause,.mini-player-button--sound-off,.mini-player-button--fullscreen{font:0 sans-serif;margin:auto;background-size:90% auto;height:64px;width:64px;border-radius:45%;transition:background-color 300ms ease 0ms;}
+.mini-player-button--pause:hover,.mini-player-button--sound-off:hover,.mini-player-button--fullscreen:hover{background-color:#0095da;transition:background-color 300ms ease 0ms;}
+.mini-player-button--more,.mini-player-button--close,.mini-player-button--hide{font:0 sans-serif;margin:0;height:20px;width:20px;opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-button--more:hover,.mini-player-button--close:hover,.mini-player-button--hide:hover{opacity:.5;transition:opacity 300ms ease 0ms;}
+.mini-player-header:after,.mini-player-menu:after{content:'';display:block;width:100%;height:1px;background:#00d2ff;background:linear-gradient(270deg, #00d2ff 0%, #0086ff 100%);position:absolute;bottom:0;left:0;}
+.mini-player{position:fixed;bottom:1em;left:1em;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:400px;display:none;z-index:99999;}
+.mini-player-header{left:auto;margin:0;height:auto;box-sizing:border-box;display:flex;flex-flow:row nowrap;cursor:move;width:100%;padding:0 10px;background:rgba(51,51,51,0.9);border-radius:6px 6px 0 0;overflow:hidden;position:relative;}
+.mini-player-header-more{margin:auto 0 auto 0;padding:0 5px;}
+.mini-player-header-current{margin:auto auto auto 0;padding:0 0;max-width:50%;display:flex;flex-flow:row nowrap;}
+.mini-player-header-current span{font:14px/40px 'Open Sans Regular', sans-serif;color:#fff;opacity:.5;margin:0 .5em 0 0;display:block;}
+.mini-player-header-close{margin:auto 0 auto auto;padding:0 5px;}
+.mini-player-content{position:relative;height:0;width:100%;padding-bottom:56.25%;overflow:hidden;background:#000;}
+.mini-player-content-control{box-sizing:border-box;position:absolute;z-index:4;top:0;left:0;height:100%;width:100%;padding:0 2em;background:rgba(0,0,0,0.8);display:flex;opacity:0;transition:opacity 300ms ease 0ms;}
+.mini-player-content-control:hover{opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-menu{display:none;box-sizing:border-box;flex-flow:row nowrap;width:100%;padding:0 10px;background:rgba(51,51,51,0.9);overflow:hidden;position:relative;border-radius:6px 6px 0 0;}
+.mini-player-menu-control{margin:12px 9px auto 1px;padding:0;}
+.mini-player-menu-box{margin:14px 13px 16px 0;padding:0 40px 0 0;}
+.mini-player-menu-box h2{font:14px/20px "Open Sans Regular",sans-serif;color:#fff;opacity:.5;margin:0 0 10px;}
+.mini-player-menu-box ul{margin:0;padding:0;list-style:none;}
+.mini-player-menu-box li{margin:0 0 4px;}
+.mini-player-menu-box li:last-child{margin:0;}
+.mini-player-menu-close{margin:10px 0 auto auto;padding:0 2px;}
+.mini-player-anons{background:#0095da;background:linear-gradient(270deg, #00d2ff 0%, #0086ff 100%);}
+.mini-player-anons-header{display:none;}
+.mini-player-anons-container{width:100%;margin:0 auto;white-space:nowrap;overflow:hidden;box-sizing:border-box;}
+.mini-player-anons-title{font:14px/20px 'Open Sans Regular', sans-serif;color:#fff;display:block;animation:none;padding:0;opacity:.5;margin:auto auto auto 0;}
+.mini-player-anons-link{font:14px/20px 'Open Sans Regular', sans-serif;color:#fff;text-decoration:none;display:block;animation:none;padding:0 5px 0 0;margin:auto 0 auto auto;opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-anons-link:hover{opacity:.5;transition:opacity 300ms ease 0ms;}
+.mini-player-anons-marquee{color:#fff;display:block;padding:0 0 0 100%;animation:marquee 15s linear infinite;}
+.mini-player-anons-marquee:hover{animation-play-state:paused;}
+.mini-player-button{-webkit-appearance:none;padding:0;border:0;outline:0;display:block;cursor:pointer;}
+.mini-player-button--more{background:transparent url(https://live.russia.tv/miniplayer/i/more.svg?v=1.0.0.420) center no-repeat;background-size:100% auto;}
+.mini-player-button--close{background:transparent url(https://live.russia.tv/miniplayer/i/close.svg?v=1.0.0.420) center no-repeat;background-size:100%;}
+.mini-player-button--hide{background:transparent url(https://live.russia.tv/miniplayer/i/collapse.svg?v=1.0.0.420) center no-repeat;background-size:100%;}
+.mini-player-button--pause{background:rgba(255,255,255,0.2) url(https://live.russia.tv/miniplayer/i/pause.svg?v=1.0.0.420) center no-repeat;background-size:80% auto;}
+.mini-player-button--sound-off{background:rgba(255,255,255,0.2) url(https://live.russia.tv/miniplayer/i/sound-off.svg?v=1.0.0.420) center no-repeat;background-size:70% auto;}
+.mini-player-button--fullscreen{background:rgba(255,255,255,0.2) url(https://live.russia.tv/miniplayer/i/fullscreen.svg?v=1.0.0.420) center no-repeat;background-size:80% auto;}
+.mini-player-button--source{font:14px/20px 'Open Sans Regular', sans-serif;color:#fff;background:transparent;text-align:left;opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-button--source:hover{opacity:.5;transition:opacity 300ms ease 0ms;}
+.mini-player-button--active{color:#0095da;}
+.mini-player-button--title{font:14px/20px 'Open Sans Regular', sans-serif;color:#fff;text-decoration:underline;white-space:nowrap;background:transparent;overflow:hidden;text-overflow:ellipsis;width:100%;display:block;opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-button--title:hover{opacity:.5;transition:opacity 300ms ease 0ms;}
+.mini-player-button--today{font:14px/30px 'Open Sans Regular', sans-serif;display:none;padding:0;background:transparent;color:#fff;opacity:1;transition:opacity 300ms ease 0ms;}
+.mini-player-button--today:hover{opacity:.5;transition:opacity 300ms ease 0ms;}
+/*! CSS Used from: Embedded */
+.mini-player{top:auto;right:1em;bottom:1em;left:auto;}
+/*! CSS Used keyframes */
+@-webkit-keyframes marquee{0%{-webkit-transform:translate(0);transform:translate(0);}to{-webkit-transform:translate(-100%);transform:translate(-100%);}}
+@keyframes marquee{0%{-webkit-transform:translate(0);transform:translate(0);}to{-webkit-transform:translate(-100%);transform:translate(-100%);}}
+@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:Open Sans;src:url(https://www.vesti.ru/fonts/opensans-regular.woff?0f7c77932ea877aca544e439a3e63bb6) format("woff"),url(https://www.vesti.ru/fonts/opensans-regular.woff2?059568b0c420bf0264d3dea408247b2c) format("woff2"),url(https://www.vesti.ru/fonts/opensans-regular.svg?563b9888199cb9c44cbc35c54dc70952) format("svg"),url(https://www.vesti.ru/fonts/opensans-regular.eot?d1817655c93180f21a37f0eb839dac76) format("eot"),url(https://www.vesti.ru/fonts/opensans-regular.ttf?d9e0079922a48f757042395172146cce) format("ttf");}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:Roboto;src:url(https://www.vesti.ru/fonts/roboto-regular.woff?76e769e5f33359ea0afb70d7fd37d29c) format("woff"),url(https://www.vesti.ru/fonts/roboto-regular.woff2?6aeaf19ecc0c63247c13e3013d4d4b19) format("woff2"),url(https://www.vesti.ru/fonts/roboto-regular.eot?d3e93294dd6b7c5a12cef757e7973767) format("eot"),url(https://www.vesti.ru/fonts/roboto-regular.ttf?aa01d89b3d61775440fc4c69c6170703) format("ttf");}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10UxCF8jA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10dxCF8jA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10VxCF8jA.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10bxCF8jA.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10WxCF8jA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10XxCF8jA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Arimo';font-style:normal;font-weight:400;font-display:swap;src:local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v14/P5sMzZCDf9_T_10ZxCE.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:Arimo;src:url(https://www.vesti.ru/fonts/arimo-regular.woff?fd6b63f2f64dff93832a861206134fa7) format("woff"),url(https://www.vesti.ru/fonts/arimo-regular.woff2?aaafb4f0a686774bfcf9e5d181ef7015) format("woff2"),url(https://www.vesti.ru/fonts/arimo-regular.eot?e0d2a04d125b9827997a0d31403f5c69) format("eot"),url(https://www.vesti.ru/fonts/arimo-regular.ttf?082463792205b279e0286b4d28a5af24) format("ttf");}
+@font-face{font-family:RussiaLight;src:url(https://www.vesti.ru/fonts/russia-light-webfont.woff?c33d86ce09e883fb7ce0dd3eb9a1efae) format("woff"),url(https://www.vesti.ru/fonts/russia-light-webfont.eot?50b4ae36b37dcb6ae2a6904fe057762d) format("eot"),url(https://www.vesti.ru/fonts/russia-light-webfont.ttf?efdce91b095afcaa4f41e5cd1adaf696) format("ttf");}
+@font-face{font-family:'Open Sans Regular';src:url(https://live.russia.tv/miniplayer/fonts/opensans-regular.woff) format("woff"),url(https://live.russia.tv/miniplayer/fonts/opensans-regular.woff2) format("woff2"),url(https://live.russia.tv/miniplayer/fonts/opensans-regular.eot) format("eot"),url(https://live.russia.tv/miniplayer/fonts/opensans-regular.ttf) format("ttf");}
